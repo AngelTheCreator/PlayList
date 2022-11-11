@@ -13,8 +13,8 @@ export default function DisplayProto(){
                 headers:{
                     "Access-Control-Allow-Origin": '*',
                     "Access-Control-Allow-Methods": '*',
-                    "client_id" : "KEYHERE",
-                    "authorization" : 'Bearer KEYHERE',
+                    "client_id" : "KEY_HERE",
+                    "authorization" : 'Bearer KEY_HERE',
                     'Content-type': 'application/json',
                 }
             })

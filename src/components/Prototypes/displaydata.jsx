@@ -5,7 +5,7 @@ export default function DisplayProto(){
 
 
     useEffect(() => {
-        const SearchEndPoint = 'https://api.igdb.com/v4/games'
+        const SearchEndPoint = '	https://nspohjcj10.execute-api.us-west-2.amazonaws.com/test'
         const fetchData = async() => {
             const response = await fetch(SearchEndPoint, {
                 method: 'POST',

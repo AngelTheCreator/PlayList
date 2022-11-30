@@ -17,3 +17,21 @@
   color: #61dafb;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      Scrollbar
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body::-webkit-scrollbar{
+  width: 0.4rem;
+  height: 0.7rem
+}
+body::-webkit-scrollbar-track{
+  border-left: 3px solid black;
+  background-color: #282c34;
+}
+body::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(220deg, #FB1514 40%, #000000 89%);
+  border-radius: 5px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+

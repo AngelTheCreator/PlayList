@@ -5,7 +5,9 @@ import './App.css';
 
 
 import Home from './components/home';
+import Err404 from './components/404Page';
 import Catalogue from './components/Catalogue/Catalogue';
+import ProfilePage from './components/Profile/profilePage';
 
 const router = createBrowserRouter([
   {
@@ -13,9 +15,17 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/test",
+    path: "/catalogue",
     element: <Catalogue />,
   },
+  {
+    path: "/*",
+    element: <Err404/>
+  },
+  {
+    path: "/profile",
+    element: <ProfilePage/>
+  }
 ]);
 
 export default function App(){
@@ -23,7 +33,6 @@ export default function App(){
       <div className='App'>
         <Bar/>
         <div className="App App-header">
-          <h1>PlayList for Chads</h1>
           <main>
             <RouterProvider router={router} />
           </main>

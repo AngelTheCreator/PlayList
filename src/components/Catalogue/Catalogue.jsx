@@ -5,6 +5,7 @@ export default function Catalogue(){
     const[data, setData] = useState([])
 
 
+
     // useEffect(() => {
     //     const SearchEndPoint = '	https://nspohjcj10.execute-api.us-west-2.amazonaws.com/test'
     //     const fetchData = async() => {
@@ -28,7 +29,11 @@ export default function Catalogue(){
     
     // console.log(data)
 
-    const gameData = games.map((item, index) =>{
+    useEffect(() => {
+        setData(games)
+    }, [])
+
+    const someData = data.map((item, index) =>{
         return(
             <div style={{borderRadius:'20px', border: '2px solid black', margin: '10px 50px', background: '#363537'}} key={index}>
                 <h2>{item.title}</h2>
@@ -41,7 +46,7 @@ export default function Catalogue(){
 
     return(
         <div>
-            {gameData}
+            {someData}
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { games } from '../../seederdata/data'
 
-export default function DisplayProto(){
+export default function Catalogue(){
     const[data, setData] = useState([])
 
 

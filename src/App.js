@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Bar from "./components/navBar"
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 
 
 import Home from './components/home';
-import DisplayProto from './components/Prototypes/displaydata';
+import Catalogue from './components/Catalogue/Catalogue';
 
 const router = createBrowserRouter([
   {
@@ -12,17 +14,20 @@ const router = createBrowserRouter([
   },
   {
     path: "/test",
-    element: <DisplayProto />,
+    element: <Catalogue />,
   },
 ]);
 
 export default function App(){
   return (
-      <div className="App App-header">
-        <h1>PlayList for Chads</h1>
-        <main>
-          <RouterProvider router={router} />
-        </main>
+      <div className='App'>
+        <Bar/>
+        <div className="App App-header">
+          <h1>PlayList for Chads</h1>
+          <main>
+            <RouterProvider router={router} />
+          </main>
+        </div>
       </div>
   );
 }

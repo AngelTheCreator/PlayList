@@ -3,15 +3,17 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useState } from 'react';
 
 import Logo from '../assets/PlayList2.png'
 import TemporaryProfileImg1 from '../assets/LickyShplit.gif'
 import TemporaryProfileImg2 from '../assets/WarDuck.jpg'
 
+
 export default function Bar() {
-  return (
+  return (    
     <div className='navBar'>
-      <Navbar bg="dark" expand="lg">
+      <Navbar style={{background: 'black'}} expand="lg">
         <Container fluid>
           <Navbar.Brand href="/">
           <img
@@ -34,19 +36,9 @@ export default function Bar() {
               <Nav.Link href="/" className="color-nav" style={{color: "#FB1514"}}>Home</Nav.Link>
               <Nav.Link href="/catalogue" className="color-nav" style={{color: "#FB1514"}}>Catalogue</Nav.Link>
             </Nav>
-            <div className="d-flex flex-grow-1">
-              <Form className="d-flex flex-grow-1">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search for games here"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-              </Form>
-            </div>
             <Nav.Link href="/profile" className="color-nav" style={{color: "#FB1514"}}>
               Profile
-              <img src={TemporaryProfileImg2} alt={"Profile Style"} style={{margin: "0px 9px", width:"50px", height:"50px", borderRadius: "50px"}}/>
+              <img src={TemporaryProfileImg1} alt={"Profile Style"} style={{margin: "0px 9px", width:"50px", height:"50px", borderRadius: "50px"}}/>
             </Nav.Link>
           </Navbar.Collapse>
         </Container>

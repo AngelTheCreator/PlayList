@@ -4,9 +4,10 @@ import { schema } from './schema';
 
 
 
-const { Games, Ejemplo } = initSchema(schema);
+const { PlaylistGames, PersonalPlaylist, Games } = initSchema(schema);
 
 export {
-  Games,
-  Ejemplo
+  PlaylistGames,
+  PersonalPlaylist,
+  Games
 };

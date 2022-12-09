@@ -1,3 +1,18 @@
+type PlaylistGames @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  GameID: String
+  GameTitle: String
+  GameImg: String
+  personalplaylistID: ID! @index(name: "byPersonalPlaylist")
+}
+
+type PersonalPlaylist @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Title: String
+  Description: String
+  PlaylistGames: [PlaylistGames] @hasMany(indexName: "byPersonalPlaylist", fields: ["id"])
+}
+
 type Games @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String
@@ -5,9 +20,5 @@ type Games @model @auth(rules: [{allow: public}]) {
   Description: String
   Image: AWSURL
   Developer: String
-}
-
-type Ejemplo @model @auth(rules: [{allow: public}]) {
-  id: ID!
 }
  

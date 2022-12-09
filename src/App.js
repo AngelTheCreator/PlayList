@@ -8,6 +8,7 @@ import Home from './components/home';
 import Err404 from './components/404Page';
 import Catalogue from './components/Catalogue/Catalogue';
 import ProfilePage from './components/Profile/profilePage';
+import SearchCatalogue from './components/Catalogue/searchResults';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,9 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <ProfilePage/>
+  },
+  { path: "/catalogue/search",
+    element: <SearchCatalogue/>
   }
 ]);
 

@@ -1,6 +1,13 @@
-.App {
-  text-align: center;
+:root{
+  --color-one: #fb1514;
+  --color-two: #000000;
+  --color-three: #F8F9F5;
+}
+
+
+body{
   background-color: #4f4f4f;
+  text-align: center;
   color: white;
 }
 
@@ -25,12 +32,12 @@ body::-webkit-scrollbar{
   height: 0.7rem
 }
 body::-webkit-scrollbar-track{
-  border-left: 3px solid black;
+  border-left: 3px solid var(--color-two);
   background-color: #282c34;
 }
 body::-webkit-scrollbar-thumb{
-  background-image: linear-gradient(220deg, #FB1514 40%, #000000 89%);
-  border-radius: 5px;
+  background-image: linear-gradient(220deg, var(--color-one) 2%, var(--color-two) 98%);
+  border-radius: 2px
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-
 import { Card } from "react-bootstrap"
 
 export default function PlayListHolder(items){
@@ -10,7 +9,6 @@ export default function PlayListHolder(items){
     }, [])
 
     console.log(data)
-
 
     const PlayListData = data.map((item, index) =>{
         return(
@@ -29,7 +27,7 @@ export default function PlayListHolder(items){
     return(
         <div style={{ border: "2px solid #FB1514", borderRadius: "75px 20px", backgroundColor: "rgb(35, 35, 35)", margin: "1rem 20px"}}>
             <p style={{marginBottom: "7px"}}>Games</p>
-            <div style={{display: "flex", flexWrap: 'wrap'}}>
+            <div style={{display: "flex", flexWrap: 'wrap', borderTop: "2px dotted grey"}}>
                 {PlayListData}
             </div>
         </div>

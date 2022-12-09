@@ -49,7 +49,7 @@ export const games = [
     },
     {
         id: 9,
-        img: "https://static.wikia.nocookie.net/bioshock/images/8/8e/BioShock_box.png/revision/latest?cb=20100425082949",
+        img: "https://m.media-amazon.com/images/M/MV5BNjBkZmI4NzktZTJmMC00NDNlLTk2M2ItNGEwODUxZGEwNmZiXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg",
         title: "BioShock",
         desc: "BioShock is a retrofuturistic video game series created by Ken Levine, published by 2K Games and developed by several studios, including Irrational Games and 2K Marin. "
     },
@@ -64,5 +64,11 @@ export const games = [
         img: "https://www.atlus.com/smt5/img/media/nahobino_trailer.jpg",
         title: "Shin Megami Tensei V",
         desc: "Shin Megami Tensei V is a 2021 role-playing video game developed and published by Atlus for the Nintendo Switch. It is part of the Shin Megami Tensei series, the central series of the larger Megami Tensei franchise."
+    },
+    {
+        id:12,
+        img: "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/c/coffee-talk-switch/hero",
+        title: "Coffee Shop",
+        desc: "Coffee Talk is a game about listening to people's problems and help them by serving a warm drink out of the ingredients you have. It is a game that tries to depict our lives as humanly as possible while having a cast that is more than just humans."
     }
 ]

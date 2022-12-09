@@ -1,0 +1,13 @@
+type Games @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  Release_date: AWSDate
+  Description: String
+  Image: AWSURL
+  Developer: String
+}
+
+type Ejemplo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+}
+ 
